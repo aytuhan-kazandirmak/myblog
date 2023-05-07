@@ -95,7 +95,7 @@ body{
     display: flex;
     grid-template-columns: auto auto;
     grid-column-gap: 100px;
-    max-width: 1080px;
+    width: 1080px;
     margin-inline: auto;
     padding-block: 32px;
     
@@ -330,6 +330,7 @@ body{
         justify-content: center;
         align-content: center;
         grid-column-gap: 80px;
+        margin: 50px 0px;
     }
     .grid-1-item-2{
         width: 250px;  
@@ -338,11 +339,12 @@ body{
         
         display: grid;
         grid-template-columns: auto auto;
-        align-content: space-between;
+        
         justify-content: center;
         grid-row-gap: 30px;
         grid-column-gap: 30px;
-        margin: 0px 0px;
+        margin: 0px auto;
+        padding: 0px;
         
     }
     .grid-3{
