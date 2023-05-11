@@ -15,8 +15,7 @@ body{
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
-    text-align: center;
-    padding: 20px;
+    align-items: center;
     max-height: 100px;
     position: fixed;
     top: 0;
@@ -25,10 +24,7 @@ body{
     background-color: #E3EDEF;
     transition: all .2s ease-in-out;
 }
-.grid > div{
-    text-align: center;
-    padding: 15px;
-}
+
 .item1{
     display: flex;
     margin: 0  90px;
@@ -54,6 +50,11 @@ body{
     text-align: center;
     border-radius: 30px;  
     cursor: pointer;
+}
+.first-logo{
+    text-decoration: none;
+    color: white;
+
 }
 .item4{
     margin: 0 90px ;
@@ -93,18 +94,25 @@ body{
 }
 .grid-1{
     display: flex;
-    grid-template-columns: auto auto;
-    grid-column-gap: 100px;
+    gap: 15%;
     width: 1080px;
     margin-inline: auto;
     padding-block: 32px;
     
 }
+.myPic{
+    width: 700px;
+}
+.fake {
+    align-items: end;
+}
+.fake2 {
+    align-items: start;
+}
 .grid-2{
     margin: 100px 0;
     display: grid;
     grid-template-columns: auto auto auto;
-    align-content: space-around;
     justify-content: center;
     
     grid-row-gap: 30px;
@@ -307,6 +315,9 @@ body{
     }
   }
   @media screen and (max-width: 768px) {
+    .myPic{
+        width: 450px;
+    }
     .grid{
         display: grid;
         grid-template-columns: 500px 450px;
@@ -325,12 +336,8 @@ body{
         padding: 0px 5px;
     }
     .grid-1{
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: center;
-        align-content: center;
-        grid-column-gap: 80px;
-        margin: 50px 0px;
+        row-gap: 80px;
+        padding: 0px 100px;
     }
     .grid-1-item-2{
         width: 250px;  
@@ -343,8 +350,7 @@ body{
         justify-content: center;
         grid-row-gap: 30px;
         grid-column-gap: 30px;
-        margin: 0px auto;
-        padding: 0px;
+        width: 1080px;
         
     }
     .grid-3{
@@ -367,7 +373,7 @@ body{
         grid-gap: 20px;
         padding: 0px;
         margin: 0px 0px;
-        width: 799px;
+        width: 1080px;
     }
     .grid-6{
         display: grid;
@@ -383,30 +389,18 @@ body{
         margin: 0px 0;
     }
     .grid-9{
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
-        height: 100px;
+        display: flex;
+        width: 1080px;
         background-color: white;
-        align-content: center;
-        border-top: 1px solid #b8c4c621;
+        align-items: center;
     }
-    .grid-9 > div{
-        margin: 0px 50px;
-    }
-    .footer-item-2 > a > i{
-        margin: 0 10px;
-        font-size: 25px;
-        color: #263535;
-        transition: transform 0.3s;
-    }
+
     .grid-7{
         display: grid;
-        grid-template-columns: auto auto;
-        grid-column-gap: 1%;
-        padding: 25px;
+        justify-content: space-between;
         align-content: center;
-        margin: 120px 0 ;
+        margin: 120px 0;
+        width: 1080px;
     }
 }
 @media screen and (max-width: 375px) {
@@ -435,8 +429,8 @@ body{
    .grid-1 {
         display: flex;
         flex-direction: column;
-        width: 800px;
         align-items: center;
+
    }
     .grid-1-item-2 {
         width: 600px;
@@ -450,13 +444,14 @@ body{
         text-align: center;
         padding-block: 15px;
     }
+    .grid-5{
+        width: 1113px;
+        padding: 70px 0px;
+    }
     .grid-2 {
     display: grid;
     grid-template-columns: auto auto;
     margin-inline: 32px;
-    width: 100%;
-    justify-content: space-between;
-    
     }
     .grid-9 {
     display: grid;
@@ -468,12 +463,25 @@ body{
     border-top: 1px solid #b8c4c621;
     }
     .grid-7{
-        grid-column-gap: 100px;
-        margin: 32px 24px;
+        justify-content: center;
+        margin: 0px auto;
+        width: 1113px;
+        padding: 70px 0px;
+        gap: 45px;
     }
     .grid-9{
-        width: 800px;
-        padding: 0 px 24px;
+        width: 1113px;
+        justify-content: space-around;
+        
+    }
+    .grid-1 > div{
+        justify-content: center;
+        width: 700px;
+        margin: 0px 0px;
+    }
+    .grid-3{
+        width: 1113px;
+        justify-content: center;
     }
 
 }
