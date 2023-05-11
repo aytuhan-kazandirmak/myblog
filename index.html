@@ -1,183 +1,296 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6664722d9e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Space+Grotesk:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6664722d9e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="jquery-3.6.4.slim.min.js"></script>
     <script src="main.js"></script>
-</head>
+  </head>
 
-<body style="background-color: #E3EDEF;">
-
-    <header id="navbar" class="grid">
-        <div class="item1">
-            <div class="rounded-circle"><a class="first-logo" href="#">AK</a></div>
-            <h5>Aytuhan Kazandırmak</h5>
+  <body style="background-color: #e3edef">
+    <header id="navbar" class="navigation">
+      <div class="navigation__header">
+        <div class="navigation__header__logo rounded-circle">
+          <a class="navigation__header__logo__title" href="#">AK</a>
         </div>
+        <h5 class="navigation__header__title">Aytuhan Kazandırmak</h5>
+      </div>
 
-        <nav class="item4">
-            <ul class="nav">
-                <li class="li-element"><a class="nav1 nav-btn" href="#containerAbout">About</a></li>
-                <li class="li-element"><a class="nav2 nav-btn" href="#containerBlog">Blog</a></li>
-                <li class="nav3"><a id="contact-btn" class="nav3-element" href="#containerContact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navigation__navbar">
+        <ul class="navigation__navbar_link">
+          <li class="navigation__navbar_link__element">
+            <a
+              class="navigation__navbar_link__element__link-button"
+              href="#containerAbout"
+              >About</a
+            >
+          </li>
+          <li class="navigation__navbar_link__element">
+            <a
+              class="navigation__navbar_link__element__link-button"
+              href="#containerBlog"
+              >Blog</a
+            >
+          </li>
+          <li
+            class="navigation__navbar_link__element navigation__navbar_link__contact-link"
+          >
+            <a
+              id="contact-btn"
+              class="navigation__navbar_link__element__link-button navigation__navbar_link__contact-link__contact-button"
+              href="#containerContact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="grid-1">
-            <div class="myPic">
-                <img src="IMG_0933 yeni.jpg" alt="aytuhan kazandirmak profil fotografi">
+      <section class="about">
+        <div class="about__picture">
+          <img
+            class="about__picture__image"
+            src="IMG_0933 yeni.jpg"
+            alt="aytuhan kazandirmak profil fotografi"
+          />
+        </div>
+        <div class="about__about-title">
+          <h2>Hi! I'm Aytuhan</h2>
+          <br />
+          <p>
+            I'm a software developer based in Istanbul, Turkey. Currently
+            working as React & React Native Developer at Builder.ai. I define
+            myself as a curious and patient learner.
+          </p>
+          <br />
+          <p>
+            I think world becomes a better place when knowledge and experiences
+            are shared and that's what I'm doing here.
+          </p>
+          <br />
+          <p>I have blog posts written in both Turkish and English.</p>
+        </div>
+      </section>
+
+      <section id="containerBlog" class="pictures">
+        <div class="pictures__image">
+          <img
+            class="pictures__image__item"
+            src="0ad2e800-2990-4e99-b282-e23ebb447bd1.jpeg"
+            alt="story"
+          />
+        </div>
+        <div class="pictures__image">
+          <img class="pictures__image__item" src="2..jpeg" alt="story" />
+        </div>
+        <div class="pictures__image">
+          <img
+            class="pictures__image__item"
+            src="7da6ef2f-8d05-499e-8f1d-58ffb317ab4c.jpeg"
+            alt="story"
+          />
+        </div>
+        <div class="pictures__image">
+          <img class="pictures__image__item" src="IMG_0814.JPG" alt="story" />
+        </div>
+        <div class="pictures__image">
+          <img class="pictures__image__item" src="IMG_0805.JPG" alt="story" />
+        </div>
+        <div class="pictures__image">
+          <img class="pictures__image__item" src="IMG_0820.JPG" alt="story" />
+        </div>
+      </section>
+      <section class="my-stack">
+        <div class="my-stack__header">
+          <h4>Kullandığım Teknolojiler</h4>
+          <h6>I am writing my thoughts in this way, using these.</h6>
+        </div>
+        <div class="my-stack__statement">
+          <div class="my-stack__statement__item">
+            <div>
+              <h2 class="my-stack__statement__item__box__heading">
+                Product Designer
+              </h2>
+              <p>Europe, Remote</p>
             </div>
             <div>
-                <h2>Hi! I'm Aytuhan</h2>
-                <br>
-                <p>I'm a software developer based in Istanbul, Turkey. Currently working as React & React Native
-                    Developer
-                    at Builder.ai. I define myself as a curious and patient learner.</p>
-                <br>
-                <p>I think world becomes a better place when knowledge and experiences are shared and that's what I'm
-                    doing
-                    here.</p>
-                <br>
-                <p>I have blog posts written in both Turkish and English.</p>
+              <h2 class="my-stack__statement__item__box__heading">
+                Senior Motion Designer
+              </h2>
+              <p>Europe, Remote</p>
             </div>
-        </section>
-
-
-
-        <div id="containerBlog" class="grid-2 fake">
-            <div class="picStory"><img src="0ad2e800-2990-4e99-b282-e23ebb447bd1.jpeg"alt="story"></div>
-            <div class="picStory"><img src="2..jpeg"alt="story"></div>
-            <div class="picStory"><img src="7da6ef2f-8d05-499e-8f1d-58ffb317ab4c.jpeg"alt="story"></div>
+            <div>
+              <h2 class="my-stack__statement__item__box__heading">
+                UI Designer
+              </h2>
+              <p>Europe, Remote</p>
+            </div>
+            <div>
+              <h2 class="my-stack__statement__item__box__heading">
+                UX Designer
+              </h2>
+              <p>Europe, Remote</p>
+            </div>
+            <div>
+              <h2 class="my-stack__statement__item__box__heading">
+                Senior Project Manager
+              </h2>
+              <p>Europe, Remote</p>
+            </div>
+            <div>
+              <h2 class="my-stack__statement__item__box__heading">
+                Open application
+              </h2>
+              <p>Europe, Remote</p>
+            </div>
+          </div>
         </div>
-        <div class="grid-2 fake2">
-                        <div class="picStory"><img src="IMG_0814.JPG" alt="story">
-                        </div>
-                        <div class="picStory"><img src="IMG_0805.JPG" alt="story">
-                        </div>
-                        <div class="picStory"><img src="IMG_0820.JPG" alt="story">
-                        </div>
+      </section>
+      <section id="containerAbout" class="biography">
+        <div class="biography__header">
+          <h1>Guiding principles</h1>
+          Get a sense of what’s it like working at team BB.
         </div>
-        <div class="grid-3">
-            <div class="box1">
-                <h4>Kullandığım Teknolojiler</h4>
-                <h6>I am writing my thoughts in this way, using these.</h6>
+        <div class="biography__statement">
+          <div class="biography__statement__item">
+            <div class="biography__statement__item__title">
+              <h2>Our mission.</h2>
+              We’re on a mission to make what is digital more human. Living in a
+              digital age, people’s experiences can sometimes feel quite
+              disconnected. That is why our work values the human connection and
+              always has users as the focal point.
             </div>
-            <div class="box2">
-                <div class="grid-4">
-                    <div>
-                        <h2>Product Designer</h2>
-                        <p>Europe, Remote</p>
-                    </div>
-                    <div>
-                        <h2>Senior Motion Designer</h2>
-                        <p>Europe, Remote</p>
-                    </div>
-                    <div>
-                        <h2>UI Designer</h2>
-                        <p>Europe, Remote</p>
-                    </div>
-                    <div>
-                        <h2>UX Designer</h2>
-                        <p>Europe, Remote</p>
-                    </div>
-                    <div>
-                        <h2>Senior Project Manager</h2>
-                        <p>Europe, Remote</p>
-                    </div>
-                    <div>
-                        <h2>Open application</h2>
-                        <p>Europe, Remote</p>
-                    </div>
-                </div>
+            <div class="biography__statement__item__title">
+              <h2>Make things that matter.</h2>
+              Build things, try things, break things, make them better and keep
+              learning. Test your ideas on real people, and use the latest
+              tools. We empower our team to solve problems creatively and have
+              fun doing it.
             </div>
+            <div>
+              <h2>Get your hands dirty.</h2>
+              Our clients are not sexy — but they make the world go round. If
+              you get excited by building tech that really changes people’s
+              lives, you’ll thrive on team BB. Our team are passionate about
+              solving sticky problems for healthcare, communications, media and
+              infrastructure technology. You’ll get to challenge yourself and
+              use your brain in completely new ways.
+            </div>
+            <div>
+              <h2>Be heard.</h2>
+              We’re a young and agile company and try to maintain a flat
+              hierarchy. We want our team to get a say in how we do things, and
+              feel a sense of ownership. We’ll expect and rely on you to keep
+              everyone on their toes. We empower you to bring your ideas to the
+              table, improve our processes and take initiative for building the
+              kind of agency you want to work for.
+            </div>
+            <div>
+              <h2>Win back some life.</h2>
+              One of the perks of our remote team is that we genuinely trust you
+              to get your work done. Because, well, you’re an adult! We
+              accommodate flexible working schedules and a liberal vacation
+              policy, so you can find a balance that works for you.
+            </div>
+          </div>
         </div>
-        <div id="containerAbout" class="grid-5">
-            <div class="about1">
-                <h1>Guiding principles</h1>Get a sense of what’s it like working at team BB.
-            </div>
-            <div class="about2">
-                <div class="grid-6">
-                    <div class="ben1">
-                        <h2>Our mission.</h2> We’re on a mission to make what is digital more human. Living in a digital
-                        age, people’s experiences can sometimes feel quite disconnected. That is why our work values the
-                        human connection and always has users as the focal point.
-                    </div>
-                    <div class="ben2">
-                        <h2>Make things that matter.</h2>Build things, try things, break things, make them better and
-                        keep
-                        learning. Test your ideas on real people, and use the latest tools. We empower our team to solve
-                        problems creatively and have fun doing it.
-                    </div>
-                    <div class="ben3">
-                        <h2>Get your hands dirty.</h2>Our clients are not sexy — but they make the world go round. If
-                        you
-                        get excited by building tech that really changes people’s lives, you’ll thrive on team BB. Our
-                        team
-                        are passionate about solving sticky problems for healthcare, communications, media and
-                        infrastructure technology. You’ll get to challenge yourself and use your brain in completely new
-                        ways.
-                    </div>
-                    <div class="ben4">
-                        <h2>Be heard.</h2>We’re a young and agile company and try to maintain a flat hierarchy. We want
-                        our
-                        team to get a say in how we do things, and feel a sense of ownership. We’ll expect and rely on
-                        you
-                        to keep everyone on their toes. We empower you to bring your ideas to the table, improve our
-                        processes and take initiative for building the kind of agency you want to work for.
-                    </div>
-                    <div class="ben5">
-                        <h2>Win back some life.</h2>One of the perks of our remote team is that we genuinely trust you
-                        to
-                        get your work done. Because, well, you’re an adult! We accommodate flexible working schedules
-                        and a
-                        liberal vacation policy, so you can find a balance that works for you.
-                    </div>
-                </div>
-            </div>
+      </section>
+      <section class="contact" id="containerContact">
+        <div class="contact__header">
+          <h2 class="contact__header__heading">
+            Benimle iletişime geçmek ister misin?
+          </h2>
+          <p class="contact__header__title">Birşeyler yaz ve gönder.</p>
         </div>
-        <div class="grid-7" id="containerContact">
-            <div class="grid-7item">
-                <h2>Benimle iletişime geçmek ister misin?</h2>
-                <p>Birşeyler yaz ve gönder.</p>
-            </div>
-            <form action="" class="grid-8" id="contact">
-                <label for="name">İsim</label>
-                <input id="fName" type="text" placeholder="Jack Ellison">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="" placeholder="j.ellison@example.com">
-                <label for="mesaj">Mesaj</label>
-                <input type="text" name="mesaj" id="" placeholder="Mesajınızı girin">
-                <input class="btn-submit" type="submit" value="Gönder">
-            </form>
-        </div>
+        <form action="" class="contact__contact-form" id="contact">
+          <label for="name">İsim</label>
+          <input
+            class="contact__contact-form__element"
+            id="fName"
+            type="text"
+            placeholder="Jack Ellison"
+          />
+          <label for="email">Email</label>
+          <input
+            class="contact__contact-form__element"
+            type="email"
+            name="email"
+            id=""
+            placeholder="j.ellison@example.com"
+          />
+          <label for="mesaj">Mesaj</label>
+          <input
+            class="contact__contact-form__element"
+            type="text"
+            name="mesaj"
+            id=""
+            placeholder="Mesajınızı girin"
+          />
+          <input
+            class="contact__contact-form__element contact__contact-form__element-submit-button"
+            type="submit"
+            value="Gönder"
+          />
+        </form>
+      </section>
     </main>
-    <footer class="grid-9">
-        <div class="footer-item-1">
-            ©AK Aytuhan Kazandırmak 2023
-        </div>
-        <div class="footer-item-2">
-            <a href="https://www.linkedin.com/in/aytuhan-kazandırmak-8003a1226/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/aytuhann/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://github.com/BornHungry" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com/Aytuhan10" target="_blank" ><i class="fa-brands fa-twitter"></i></a>
-        </div>
+    <footer class="footer-statement">
+      <div class="footer-statement__brand">©AK Aytuhan Kazandırmak 2023</div>
+      <div class="footer-statement__social-media">
+        <a
+          href="https://www.linkedin.com/in/aytuhan-kazandırmak-8003a1226/"
+          target="_blank"
+          ><i
+            class="footer-statement__social-media__item fa-brands fa-linkedin"
+          ></i
+        ></a>
+        <a href="https://www.instagram.com/aytuhann/" target="_blank"
+          ><i
+            class="footer-statement__social-media__item fa-brands fa-square-instagram"
+          ></i
+        ></a>
+        <a href="https://github.com/BornHungry" target="_blank"
+          ><i
+            class="footer-statement__social-media__item fa-brands fa-github"
+          ></i
+        ></a>
+        <a href="https://twitter.com/Aytuhan10" target="_blank"
+          ><i
+            class="footer-statement__social-media__item fa-brands fa-twitter"
+          ></i
+        ></a>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

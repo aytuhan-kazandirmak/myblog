@@ -1,17 +1,19 @@
-*{
+* {
     box-sizing: border-box;
 }
-img{
+
+img {
     height: auto;
     width: 100%;
 }
-body{
+
+body {
     padding-top: 100px;
     font-family: 'Roboto', sans-serif;
     position: relative;
-    
 }
-.grid{
+
+.navigation {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
@@ -25,11 +27,12 @@ body{
     transition: all .2s ease-in-out;
 }
 
-.item1{
+.navigation__header {
     display: flex;
-    margin: 0  90px;
+    margin: 0 90px;
 }
-.item1 > h5{
+
+.navigation__header__title {
     color: #042825;
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
@@ -37,9 +40,10 @@ body{
     padding: 5px;
     text-align: start;
     cursor: pointer;
-    
+
 }
-.item1 > div{
+
+.navigation__header__logo {
     color: white;
     background-color: #233632;
     font-family: 'Roboto', sans-serif;
@@ -48,22 +52,31 @@ body{
     width: 38px;
     height: 38px;
     text-align: center;
-    border-radius: 30px;  
+    border-radius: 30px;
     cursor: pointer;
 }
-.first-logo{
+
+.navigation__header__logo__title {
     text-decoration: none;
     color: white;
 
 }
-.item4{
-    margin: 0 90px ;
+
+.navigation__navbar {
+    margin: 0 90px;
 }
-.nav > li{
+
+.navigation__navbar_link {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation__navbar_link__element {
     padding: 0 25px;
-    
+
 }
-.nav >li > a{
+
+.navigation__navbar_link__element__link-button {
     text-decoration: none;
     color: #042825;
     font-size: 15px;
@@ -71,145 +84,130 @@ body{
     font-weight: 600;
     padding: 5px;
 
-    
+
 }
-.nav>.nav3>a{
+
+.navigation__navbar_link__contact-link__contact-button {
     background-color: #042825;
     color: white;
     padding: 8px 15px;
-    border-radius: 25px;    
+    border-radius: 25px;
     scroll-behavior: smooth;
 }
 
-.jrmain2 > p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    color: #042825;
-}
-.jrmain2 > h2 { 
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    font-weight: bolder;
-    color: #042825;
-}
-.grid-1{
+.about {
     display: flex;
     gap: 15%;
     width: 1080px;
     margin-inline: auto;
     padding-block: 32px;
-    
+
 }
-.myPic{
-    width: 700px;
+
+.about__picture__image {
+    width: 450px;
 }
-.fake {
-    align-items: end;
-}
-.fake2 {
-    align-items: start;
-}
-.grid-2{
+
+.pictures {
     margin: 100px 0;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
-    
     grid-row-gap: 30px;
     grid-column-gap: 30px;
 }
-.grid-2 > div> img{
+
+.pictures__image__item {
     width: 350px;
 }
-.grid-3{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 20px;
-    padding: 60px 120px;
-}
-.grid-3 > div{
-    margin: 30px;
-    
-}
-.grid-4{
+
+.my-stack {
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 25px;  
-    justify-content: start;
-    
+    grid-gap: 20px;
+    justify-content: center;
 }
-.box1{
+
+.my-stack__header,
+.my-stack__statement {
+    margin: 30px;
+
+}
+
+.my-stack__statement__item {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 25px;
+    justify-content: start;
+
+}
+
+.box1 {
     grid-area: 1/1/2/4;
     color: #042825;
     width: 100%;
 }
-.box1 > h4{
+
+.box1>h4 {
     font-weight: bolder;
     color: #042825;
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
 }
-.box1 > h6{
+
+.box1>h6 {
     font-weight: bold;
     color: #042825;
     font-family: 'Roboto', sans-serif;
 }
-.box2{
+
+.box2 {
     width: 530px;
     grid-area: 2/3/3/3;
     color: #042825;
-    
+
 }
-.grid-4 > div{
-    margin: 25px 0;
-}
-.grid-4 >div > h2{
+
+.my-stack__statement__item__box__heading {
     border-bottom: 1px solid rgba(0, 0, 0, 0.103);
     width: fit-content;
     cursor: pointer;
     transition: transform 0s, border-bottom 0.4s linear;
 }
-.grid-5{
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: #042825;
-    grid-gap: 20px;
-    padding: 60px 120px;
-    
 
+.biography {
+    display: grid;
+    grid-template-columns: 1280px;
+    background-color: #042825;
+    justify-content: center;
+    color: white;
+    grid-row-gap: 50px;
 }
-.grid-5 > div{
+
+.grid-5>div {
     margin: 30px;
 }
-.grid-6{
+
+.biography__statement__item {
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 25px;  
+    grid-gap: 50px;
     justify-content: center;
+    padding-block: 48px;
 }
-.about1{
-    color: white;
 
-}
-.about2{
-    grid-area: 2/2/3/3;
-    color: white;
-    
-}
-.grid-6 > div{
-    margin: 25px 0;
-}
-.grid-7{
+.contact {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 15px;
     padding: 25px;
     align-content: center;
-    margin: 120px 0 ;
+    margin: 120px 0;
 
 
 }
-.grid-7 > .grid-7item> h2{
+
+.contact__header__heading {
     text-align: center;
     font-weight: bolder;
     color: #042825;
@@ -217,23 +215,26 @@ body{
     font-size: 40px;
 
 }
-.grid-7 > .grid-7item > p{
+
+.contact__header__title {
     font-weight: bold;
     color: #042825;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-.grid-8{
+
+.contact__contact-form {
     display: grid;
     grid-template-columns: auto;
     justify-content: space-evenly;
     align-content: center;
     border: 1px solid #b8c4c6ab;
     background-color: white;
-    width: 400px; 
+    width: 400px;
     padding: 50px 0;
 }
-.grid-8 > input{
+
+.contact__contact-form__element {
     margin-bottom: 20px;
     width: 350px;
     height: 48px;
@@ -243,14 +244,15 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.btn-submit{
+.contact__contact-form__element-submit-button {
     background-color: #042825;
     color: white;
     font-weight: 600;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
 }
-.grid-9{
+
+.footer-statement {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
@@ -260,10 +262,13 @@ body{
     background-color: #E3EDEF;
     border-top: 1px solid #b8c4c621;
 }
-.footer-item-1{
+
+.footer-statement__brand {
     color: #B8C4C6;
+
 }
-.footer-item-2 > a > i{
+
+.footer-statement__social-media__item {
     margin: 0 10px;
     font-size: 25px;
     color: #263535;
@@ -271,102 +276,113 @@ body{
 }
 
 /*************************HOVER****************************/
-.nav>.nav3>a:hover{
+.navigation__navbar_link__contact-link__contact-button:hover {
     background-color: #233632;
 }
-.footer-item-2> a > i:hover{
+
+.footer-statement__social-media__item:hover {
     transform: translateY(-5px);
 }
-.grid-4 >div > h2:hover{
+
+.my-stack__statement__item__box__heading:hover {
     border-bottom: 1px solid black;
 }
 
-.btn-submit:hover{
+.contact__contact-form__element-submit-button:hover {
     background-color: #233632;
 }
 
 @media screen and (max-width: 1200px) {
-    .grid{
+    .navigation {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-between;
         margin: 0px;
         align-items: center;
     }
-    .item1{
-        grid-area: 1/1/2/2; 
+
+    .navigation__header {
+        grid-area: 1/1/2/2;
     }
-    .item4{
+
+    .navigation__navbar {
         display: flex;
         grid-area: 1/2/2/3;
     }
-    .nav > li{
+
+    .navigation__navbar_link__element {
         padding: 0px 20px;
     }
-    .grid-1{
+
+    .about {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: center;
         align-content: center;
         grid-column-gap: 80px;
     }
-    .grid-1-item-2{
-        width: 250px;  
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .myPic{
+
+}
+
+@media screen and (max-width: 768px) {
+    .about__picture__image {
         width: 450px;
     }
-    .grid{
+
+    .navigation {
         display: grid;
         grid-template-columns: 500px 450px;
         justify-content: space-evenly;
         margin: 0px;
         align-items: center;
     }
-    .item1{
-        grid-area: 1/1/2/2; 
+
+    .navigation__header {
+        grid-area: 1/1/2/2;
     }
-    .item4{
+
+    .navigation__navbar {
         display: flex;
         grid-area: 1/2/2/3;
     }
-    .nav > li{
+
+    .navigation__navbar_link__element {
         padding: 0px 5px;
     }
-    .grid-1{
+
+    .about {
         row-gap: 80px;
         padding: 0px 100px;
     }
-    .grid-1-item-2{
-        width: 250px;  
-    }
-    .grid-2{
-        
+
+    .pictures {
+
         display: grid;
         grid-template-columns: auto auto;
-        
+
         justify-content: center;
         grid-row-gap: 30px;
         grid-column-gap: 30px;
         width: 1080px;
-        
+
     }
-    .grid-3{
+
+    .my-stack {
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 20px;
         padding: 0px;
         margin: 80px 0px;
     }
-    .box1{
+
+    .my-stack__header {
         grid-area: 1/1/2/4;
         color: #042825;
         margin: 0px;
         padding: 0px;
     }
-    .grid-5{
+
+    .biography {
         display: grid;
         grid-template-columns: auto auto;
         background-color: #042825;
@@ -375,27 +391,31 @@ body{
         margin: 0px 0px;
         width: 1080px;
     }
-    .grid-6{
+
+    .biography__statement__item {
         display: grid;
         grid-template-columns: auto;
-        grid-gap: 25px;  
+        grid-gap: 25px;
         justify-content: start;
     }
-    .about2{
+
+    .biography__statement {
         grid-area: 2/1/3/3;
         color: white;
     }
-    .grid-6 > div{
+
+    .biography__statement__item__title {
         margin: 0px 0;
     }
-    .grid-9{
+
+    .footer-statement {
         display: flex;
         width: 1080px;
         background-color: white;
         align-items: center;
     }
 
-    .grid-7{
+    .contact {
         display: grid;
         justify-content: space-between;
         align-content: center;
@@ -403,8 +423,9 @@ body{
         width: 1080px;
     }
 }
+
 @media screen and (max-width: 375px) {
-    .grid{
+    .navigation {
         display: grid;
         grid-template-columns: auto auto;
         justify-content: space-between;
@@ -413,73 +434,69 @@ body{
         height: 60px;
         padding: 0px;
     }
-    .grid > div{
-        margin: 0px 25px; 
+
+    .navigation__header,
+    .navigation__navbar {
+        margin: 0px 25px;
     }
-    .item1{
-        grid-area: 1/1/2/2; 
+
+    .navigation__header {
+        grid-area: 1/1/2/2;
     }
-    .item4{
+
+    .navigation__navbar {
         display: flex;
         grid-area: 1/2/2/3;
     }
-    .item1 > h5{
+
+    .navigation__header__title {
         display: none;
-   }
-   .grid-1 {
+    }
+
+    .about {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-   }
-    .grid-1-item-2 {
-        width: 600px;
-        padding-inline: 15px;
     }
-    .grid-1-item-2 > h2 {
-        text-align: center;
-    }
-    .grid-1-item-1{
-        width: 500px;
-        text-align: center;
-        padding-block: 15px;
-    }
-    .grid-5{
+
+    .biography {
         width: 1113px;
         padding: 70px 0px;
     }
-    .grid-2 {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-inline: 32px;
+
+    .pictures {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-inline: 32px;
     }
-    .grid-9 {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    height: 100px;
-    background-color: white;
-    align-content: center;
-    border-top: 1px solid #b8c4c621;
+
+    .footer-statement {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 100px;
+        background-color: white;
+        align-content: center;
+        border-top: 1px solid #b8c4c621;
+        width: 1113px;
+        justify-content: space-around;
     }
-    .grid-7{
+
+    .contact {
         justify-content: center;
         margin: 0px auto;
         width: 1113px;
         padding: 70px 0px;
         gap: 45px;
     }
-    .grid-9{
-        width: 1113px;
-        justify-content: space-around;
-        
-    }
-    .grid-1 > div{
+
+    .about__about-title {
         justify-content: center;
         width: 700px;
         margin: 0px 0px;
     }
-    .grid-3{
+
+    .my-stack {
         width: 1113px;
         justify-content: center;
     }
