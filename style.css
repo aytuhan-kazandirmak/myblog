@@ -320,6 +320,7 @@ body {
         justify-content: center;
         align-content: center;
         grid-column-gap: 80px;
+        padding: 0px 50px;
     }
 
 }
@@ -426,79 +427,11 @@ body {
 
 @media screen and (max-width: 375px) {
     .navigation {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
-        align-content: center;
-        margin: 0px 0px;
-        height: 60px;
-        padding: 0px;
-    }
-
-    .navigation__header,
-    .navigation__navbar {
-        margin: 0px 25px;
-    }
-
-    .navigation__header {
-        grid-area: 1/1/2/2;
-    }
-
-    .navigation__navbar {
-        display: flex;
-        grid-area: 1/2/2/3;
+        width: 100%;
+        max-width: 375px;
     }
 
     .navigation__header__title {
         display: none;
     }
-
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .biography {
-        width: 1113px;
-        padding: 70px 0px;
-    }
-
-    .pictures {
-        display: grid;
-        grid-template-columns: auto auto;
-        margin-inline: 32px;
-    }
-
-    .footer-statement {
-        display: grid;
-        grid-template-columns: auto auto;
-        height: 100px;
-        background-color: white;
-        align-content: center;
-        border-top: 1px solid #b8c4c621;
-        width: 1113px;
-        justify-content: space-around;
-    }
-
-    .contact {
-        justify-content: center;
-        margin: 0px auto;
-        width: 1113px;
-        padding: 70px 0px;
-        gap: 45px;
-    }
-
-    .about__about-title {
-        justify-content: center;
-        width: 700px;
-        margin: 0px 0px;
-    }
-
-    .my-stack {
-        width: 1113px;
-        justify-content: center;
-    }
-
 }
