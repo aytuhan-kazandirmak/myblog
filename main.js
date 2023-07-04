@@ -1,8 +1,8 @@
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 650) {
+  if ($(window).scrollTop() > 550) {
     $(".navigation").css({
       "max-height": "60px",
-      padding: "0px",
+      padding: "20px",
       "box-shadow": "0px 0px 5px 0px",
     });
   } else {
