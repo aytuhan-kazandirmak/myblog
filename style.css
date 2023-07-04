@@ -432,8 +432,15 @@ body {
         margin: 0px;
         padding: 0px;
         justify-content: space-between;
+        max-width: 375px;
 
     }
+
+    .navigation__header {
+        margin: 0px;
+    }
+
+
 
     .navigation__header__title {
         display: none;
