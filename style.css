@@ -427,12 +427,12 @@ body {
 
 @media screen and (max-width: 375px) {
     .navigation {
-        width: 70%;
+        width: 100%;
         display: flex;
         margin: 0px;
         padding: 0px;
         justify-content: space-between;
-        max-width: 375px;
+        padding-top: 1.25rem;
 
     }
 
@@ -447,7 +447,18 @@ body {
     }
 
     .about {
-        display: none;
+        display: flex;
+        max-width: 375px;
+        width: 70%;
+
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .about__picture__image {
+        width: 100%;
+        margin: 0px auto;
     }
 
     .pictures {
@@ -462,7 +473,7 @@ body {
         display: none;
     }
 
-    .containerContact {
+    .contact {
         display: none;
     }
 
