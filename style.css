@@ -428,7 +428,7 @@ body {
 @media screen and (max-width: 375px) {
     .navigation {
         width: 100%;
-        max-width: 375px;
+
     }
 
     .navigation__header__title {
