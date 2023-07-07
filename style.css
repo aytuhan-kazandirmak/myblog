@@ -130,6 +130,10 @@ body {
 
 }
 
+.my-stack__header__string {
+    font-size: 2.5rem;
+}
+
 .box1 {
     grid-area: 1/1/2/4;
     color: #042825;
