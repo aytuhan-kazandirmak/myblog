@@ -81,6 +81,7 @@ body {
     padding: 8px 15px;
     border-radius: 25px;
     scroll-behavior: smooth;
+
 }
 
 .about {
@@ -191,10 +192,11 @@ body {
 .contact {
     display: grid;
     grid-template-columns: auto auto;
-    grid-column-gap: 15px;
+    grid-column-gap: 2.25rem;
     padding: 25px;
     align-content: center;
     margin: 120px 0;
+    justify-content: space-evenly;
 
 
 }
